@@ -10,6 +10,10 @@ class VaccineInfo(MycroftSkill):
         self.speak_dialog('info.vaccine')
 
 
+    @intent_file_handler('info.harvey.intent')
+    def handle_info_harvey(self, message):
+        self.speak_dialog('info.harvey')
+        
 def create_skill():
     return VaccineInfo()
 
